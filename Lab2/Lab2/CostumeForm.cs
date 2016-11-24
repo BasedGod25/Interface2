@@ -26,14 +26,16 @@ namespace Lab2
             dataGridView1.Location = new Point(12, 88);
             groupBox1.Location = new Point(12, 88);
             button2.Location = new Point(866, 88);
-            this.Size = new Size(1022, 470);
+            this.Height = this.Height - groupBox2.Height - 5;
+            groupBox2.Visible = false;
         }
         public void big()
         {
             dataGridView1.Location = new Point(12, 250);
             groupBox1.Location = new Point(12, 250);
             button2.Location = new Point(866, 250);
-            this.Size = new Size(1022, 629);
+            this.Height = this.Height + groupBox2.Height + 5;
+            groupBox2.Visible = true;
         }
         bool open = true;
         private void button1_Click(object sender, EventArgs e)
