@@ -35,9 +35,19 @@ namespace Lab2
             button2.Location = new Point(866, 250);
             this.Size = new Size(1022, 629);
         }
+        bool open = true;
         private void button1_Click(object sender, EventArgs e)
         {
-            big(); //надо сделать чтобы убирался расширенный поиск
+            if (open)
+            {
+                big(); //надо сделать чтобы убирался расширенный поиск
+                open = false;
+            }
+            else
+            {
+                small();
+                open = true;
+            }
         }
 
         private void CostumeForm_Load(object sender, EventArgs e)
