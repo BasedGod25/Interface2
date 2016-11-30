@@ -62,6 +62,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.броньToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -97,10 +98,11 @@
             // справочникиToolStripMenuItem
             // 
             this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.костюмыToolStripMenuItem,
-            this.клиентыToolStripMenuItem,
+            this.броньToolStripMenuItem,
+            this.сотрудникиToolStripMenuItem,
             this.счетаToolStripMenuItem,
-            this.сотрудникиToolStripMenuItem});
+            this.клиентыToolStripMenuItem,
+            this.костюмыToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.справочникиToolStripMenuItem.Text = "Справочники";
@@ -371,6 +373,12 @@
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
+            // броньToolStripMenuItem
+            // 
+            this.броньToolStripMenuItem.Name = "броньToolStripMenuItem";
+            this.броньToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.броньToolStripMenuItem.Text = "Бронь";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -440,5 +448,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ToolStripMenuItem броньToolStripMenuItem;
     }
 }
