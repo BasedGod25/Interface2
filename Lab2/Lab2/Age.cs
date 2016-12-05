@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lab2
 {
-    public partial class Clients : Form
+    public partial class Age : Form
     {
-        public Clients()
+        public Age()
         {
             InitializeComponent();
         }
@@ -35,34 +35,34 @@ namespace Lab2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            visible();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            visible();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            unvisible();
-            groupBox1.Text = "Добавление";
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            unvisible();// привязка данных к полям
-            groupBox1.Text = "Редактирование";
-        }
-
-        private void Clients_Load(object sender, EventArgs e)
-        {
-            visible();
+            visible(); //добавить или изменить
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //удаление
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            unvisible();
+            groupBox1.Text = "Редактировать";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            unvisible();
+            groupBox1.Text = "Добавить";
+        }
+
+        private void Age_Load(object sender, EventArgs e)
+        {
+            visible();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            visible();// ничего не делать
         }
     }
 }

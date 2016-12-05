@@ -52,7 +52,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.trackBar4 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label18 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -62,19 +68,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -100,7 +100,7 @@
             this.groupBox1.Size = new System.Drawing.Size(848, 322);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Оформление заказа на аренду костюмов";
+            this.groupBox1.Text = "Редактирование";
             // 
             // textBox6
             // 
@@ -314,6 +314,38 @@
             this.groupBox2.Text = "Расширенный поиск";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // trackBar3
+            // 
+            this.trackBar3.Location = new System.Drawing.Point(615, 78);
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(90, 56);
+            this.trackBar3.TabIndex = 46;
+            this.trackBar3.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            // 
+            // trackBar4
+            // 
+            this.trackBar4.Location = new System.Drawing.Point(615, 37);
+            this.trackBar4.Name = "trackBar4";
+            this.trackBar4.Size = new System.Drawing.Size(90, 56);
+            this.trackBar4.TabIndex = 45;
+            this.trackBar4.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(452, 78);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(90, 56);
+            this.trackBar2.TabIndex = 44;
+            this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(452, 37);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(90, 56);
+            this.trackBar1.TabIndex = 43;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -322,6 +354,24 @@
             this.label18.Size = new System.Drawing.Size(138, 17);
             this.label18.TabIndex = 42;
             this.label18.Text = "Стоимость костюма";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(583, 95);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(27, 17);
+            this.label16.TabIndex = 40;
+            this.label16.Text = "До";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(583, 49);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(26, 17);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "От";
             // 
             // label15
             // 
@@ -401,56 +451,6 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Размер";
             // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(452, 37);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(90, 56);
-            this.trackBar1.TabIndex = 43;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.Location = new System.Drawing.Point(452, 78);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(90, 56);
-            this.trackBar2.TabIndex = 44;
-            this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(583, 49);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(26, 17);
-            this.label17.TabIndex = 39;
-            this.label17.Text = "От";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(583, 95);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(27, 17);
-            this.label16.TabIndex = 40;
-            this.label16.Text = "До";
-            // 
-            // trackBar3
-            // 
-            this.trackBar3.Location = new System.Drawing.Point(615, 78);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(90, 56);
-            this.trackBar3.TabIndex = 46;
-            this.trackBar3.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            // 
-            // trackBar4
-            // 
-            this.trackBar4.Location = new System.Drawing.Point(615, 37);
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Size = new System.Drawing.Size(90, 56);
-            this.trackBar4.TabIndex = 45;
-            this.trackBar4.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            // 
             // CostumeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -476,10 +476,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

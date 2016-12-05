@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Age.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Age.Designer.cs">
+      <DependentUpon>Age.cs</DependentUpon>
+    </Compile>
     <Compile Include="Auth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     <Compile Include="CostumeForm.Designer.cs">
       <DependentUpon>CostumeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Damage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Damage.Designer.cs">
+      <DependentUpon>Damage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Size.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Size.Designer.cs">
+      <DependentUpon>Size.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeСostume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypeСostume.Designer.cs">
+      <DependentUpon>TypeСostume.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Age.resx">
+      <DependentUpon>Age.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CostumeForm.resx">
       <DependentUpon>CostumeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Damage.resx">
+      <DependentUpon>Damage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -92,6 +122,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Size.resx">
+      <DependentUpon>Size.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypeСostume.resx">
+      <DependentUpon>TypeСostume.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

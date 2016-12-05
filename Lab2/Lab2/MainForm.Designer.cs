@@ -32,18 +32,29 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.костюмыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.броньToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заказыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.счетаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.клиентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.костюмыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сотрудникиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.типКостюмаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.размерыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.возрастнаяКатегорияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.степениПоврежденияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -53,8 +64,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -62,7 +71,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.броньToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -92,45 +102,95 @@
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // справочникиToolStripMenuItem
             // 
             this.справочникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.броньToolStripMenuItem,
-            this.сотрудникиToolStripMenuItem,
+            this.заказыToolStripMenuItem,
             this.счетаToolStripMenuItem,
             this.клиентыToolStripMenuItem,
-            this.костюмыToolStripMenuItem});
+            this.костюмыToolStripMenuItem,
+            this.сотрудникиToolStripMenuItem1,
+            this.типКостюмаToolStripMenuItem,
+            this.размерыToolStripMenuItem,
+            this.возрастнаяКатегорияToolStripMenuItem,
+            this.степениПоврежденияToolStripMenuItem});
             this.справочникиToolStripMenuItem.Name = "справочникиToolStripMenuItem";
             this.справочникиToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.справочникиToolStripMenuItem.Text = "Справочники";
             // 
-            // костюмыToolStripMenuItem
+            // броньToolStripMenuItem
             // 
-            this.костюмыToolStripMenuItem.Name = "костюмыToolStripMenuItem";
-            this.костюмыToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
-            this.костюмыToolStripMenuItem.Text = "Костюмы";
-            this.костюмыToolStripMenuItem.Click += new System.EventHandler(this.костюмыToolStripMenuItem_Click);
+            this.броньToolStripMenuItem.Name = "броньToolStripMenuItem";
+            this.броньToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.броньToolStripMenuItem.Text = "Бронь";
+            this.броньToolStripMenuItem.Click += new System.EventHandler(this.броньToolStripMenuItem_Click);
             // 
-            // клиентыToolStripMenuItem
+            // заказыToolStripMenuItem
             // 
-            this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
-            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
-            this.клиентыToolStripMenuItem.Text = "Клиенты";
+            this.заказыToolStripMenuItem.Name = "заказыToolStripMenuItem";
+            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.заказыToolStripMenuItem.Text = "Заказы";
+            this.заказыToolStripMenuItem.Click += new System.EventHandler(this.заказыToolStripMenuItem_Click);
             // 
             // счетаToolStripMenuItem
             // 
             this.счетаToolStripMenuItem.Name = "счетаToolStripMenuItem";
-            this.счетаToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.счетаToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.счетаToolStripMenuItem.Text = "Счета";
+            this.счетаToolStripMenuItem.Click += new System.EventHandler(this.счетаToolStripMenuItem_Click);
             // 
-            // сотрудникиToolStripMenuItem
+            // клиентыToolStripMenuItem
             // 
-            this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
-            this.сотрудникиToolStripMenuItem.Text = "Заказы";
+            this.клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
+            this.клиентыToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.клиентыToolStripMenuItem.Text = "Клиенты";
+            this.клиентыToolStripMenuItem.Click += new System.EventHandler(this.клиентыToolStripMenuItem_Click);
+            // 
+            // костюмыToolStripMenuItem
+            // 
+            this.костюмыToolStripMenuItem.Name = "костюмыToolStripMenuItem";
+            this.костюмыToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.костюмыToolStripMenuItem.Text = "Костюмы";
+            this.костюмыToolStripMenuItem.Click += new System.EventHandler(this.костюмыToolStripMenuItem_Click);
+            // 
+            // сотрудникиToolStripMenuItem1
+            // 
+            this.сотрудникиToolStripMenuItem1.Name = "сотрудникиToolStripMenuItem1";
+            this.сотрудникиToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
+            this.сотрудникиToolStripMenuItem1.Text = "Сотрудники";
+            // 
+            // типКостюмаToolStripMenuItem
+            // 
+            this.типКостюмаToolStripMenuItem.Name = "типКостюмаToolStripMenuItem";
+            this.типКостюмаToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.типКостюмаToolStripMenuItem.Text = "Тип костюма";
+            this.типКостюмаToolStripMenuItem.Click += new System.EventHandler(this.типКостюмаToolStripMenuItem_Click);
+            // 
+            // размерыToolStripMenuItem
+            // 
+            this.размерыToolStripMenuItem.Name = "размерыToolStripMenuItem";
+            this.размерыToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.размерыToolStripMenuItem.Text = "Размеры";
+            this.размерыToolStripMenuItem.Click += new System.EventHandler(this.размерыToolStripMenuItem_Click);
+            // 
+            // возрастнаяКатегорияToolStripMenuItem
+            // 
+            this.возрастнаяКатегорияToolStripMenuItem.Name = "возрастнаяКатегорияToolStripMenuItem";
+            this.возрастнаяКатегорияToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.возрастнаяКатегорияToolStripMenuItem.Text = "Возрастная категория";
+            this.возрастнаяКатегорияToolStripMenuItem.Click += new System.EventHandler(this.возрастнаяКатегорияToolStripMenuItem_Click);
+            // 
+            // степениПоврежденияToolStripMenuItem
+            // 
+            this.степениПоврежденияToolStripMenuItem.Name = "степениПоврежденияToolStripMenuItem";
+            this.степениПоврежденияToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.степениПоврежденияToolStripMenuItem.Text = "Степени повреждения";
+            this.степениПоврежденияToolStripMenuItem.Click += new System.EventHandler(this.степениПоврежденияToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -148,7 +208,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(24, 125);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(848, 375);
+            this.dataGridView1.Size = new System.Drawing.Size(848, 430);
             this.dataGridView1.TabIndex = 2;
             // 
             // label2
@@ -167,28 +227,19 @@
             this.textBox1.Size = new System.Drawing.Size(848, 22);
             this.textBox1.TabIndex = 4;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(890, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Аренда костюма";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(890, 161);
+            this.button2.Location = new System.Drawing.Point(890, 197);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 30);
             this.button2.TabIndex = 6;
             this.button2.Text = "Редактировать";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(890, 245);
+            this.button3.Location = new System.Drawing.Point(890, 286);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 30);
             this.button3.TabIndex = 7;
@@ -197,6 +248,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.button8);
+            this.groupBox1.Controls.Add(this.dateTimePicker3);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.textBox4);
@@ -206,8 +263,6 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -217,32 +272,86 @@
             this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Location = new System.Drawing.Point(24, 125);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(848, 375);
+            this.groupBox1.Size = new System.Drawing.Size(848, 430);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Оформление заказа на аренду костюмов";
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(702, 340);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(98, 22);
+            this.textBox5.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(523, 343);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 17);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Общая сумма заказа";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(806, 169);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(36, 30);
+            this.button7.TabIndex = 20;
+            this.button7.Text = "+";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(806, 205);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(36, 30);
+            this.button8.TabIndex = 21;
+            this.button8.Text = "-";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(162, 62);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(176, 22);
+            this.dateTimePicker3.TabIndex = 19;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(159, 87);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 17);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Дата выдачи";
+            // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(767, 339);
+            this.button5.Location = new System.Drawing.Point(767, 394);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 30);
             this.button5.TabIndex = 17;
             this.button5.Text = "Отмена";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(686, 339);
+            this.button4.Location = new System.Drawing.Point(686, 394);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 30);
             this.button4.TabIndex = 16;
             this.button4.Text = "ОК";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(727, 60);
+            this.textBox4.Location = new System.Drawing.Point(20, 352);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(98, 22);
             this.textBox4.TabIndex = 15;
@@ -250,7 +359,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(724, 39);
+            this.label10.Location = new System.Drawing.Point(17, 331);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 17);
             this.label10.TabIndex = 14;
@@ -258,7 +367,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(727, 108);
+            this.textBox3.Location = new System.Drawing.Point(148, 352);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(98, 22);
             this.textBox3.TabIndex = 13;
@@ -266,11 +375,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(725, 87);
+            this.label9.Location = new System.Drawing.Point(145, 332);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 17);
+            this.label9.Size = new System.Drawing.Size(104, 17);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Сумма заказа";
+            this.label9.Text = "Сумма аренды";
             // 
             // textBox2
             // 
@@ -291,32 +400,16 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 136);
+            this.label7.Location = new System.Drawing.Point(17, 149);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 17);
             this.label7.TabIndex = 8;
             this.label7.Text = "Костюмы";
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(140, 108);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(176, 22);
-            this.dateTimePicker2.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(137, 88);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Дата заказа";
-            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(339, 108);
+            this.comboBox2.Location = new System.Drawing.Point(381, 110);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(272, 24);
             this.comboBox2.TabIndex = 5;
@@ -324,7 +417,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(336, 88);
+            this.label5.Location = new System.Drawing.Point(378, 90);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 17);
             this.label5.TabIndex = 4;
@@ -333,7 +426,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(339, 60);
+            this.comboBox1.Location = new System.Drawing.Point(381, 62);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(272, 24);
             this.comboBox1.TabIndex = 3;
@@ -341,7 +434,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(336, 40);
+            this.label4.Location = new System.Drawing.Point(378, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 2;
@@ -349,7 +442,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(140, 62);
+            this.dateTimePicker1.Location = new System.Drawing.Point(162, 110);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(176, 22);
             this.dateTimePicker1.TabIndex = 1;
@@ -357,37 +450,52 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 41);
+            this.label3.Location = new System.Drawing.Point(159, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 17);
+            this.label3.Size = new System.Drawing.Size(91, 17);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Дата заказа по плану";
+            this.label3.Text = "Дата заказа";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(20, 156);
+            this.dataGridView2.Location = new System.Drawing.Point(20, 169);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(805, 165);
+            this.dataGridView2.Size = new System.Drawing.Size(780, 153);
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // броньToolStripMenuItem
+            // button6
             // 
-            this.броньToolStripMenuItem.Name = "броньToolStripMenuItem";
-            this.броньToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
-            this.броньToolStripMenuItem.Text = "Бронь";
+            this.button6.Location = new System.Drawing.Point(890, 125);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(129, 30);
+            this.button6.TabIndex = 9;
+            this.button6.Text = "Аренда";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(890, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 30);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Бронирование";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 512);
+            this.ClientSize = new System.Drawing.Size(1031, 567);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
@@ -421,21 +529,18 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem костюмыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem клиентыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem счетаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заказыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -449,5 +554,18 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ToolStripMenuItem броньToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem типКостюмаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem размерыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem возрастнаяКатегорияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem степениПоврежденияToolStripMenuItem;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label6;
     }
 }
