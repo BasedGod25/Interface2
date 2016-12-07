@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lab2
 {
-    public partial class Clients : Form
+    public partial class Employees : Form
     {
-        public Clients()
+        public Employees()
         {
             InitializeComponent();
         }
@@ -34,6 +34,10 @@ namespace Lab2
             button3.Enabled = false;
             textBox1.Enabled = false;
         }
+        private void Employees_Load(object sender, EventArgs e)
+        {
+            visible();
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -45,26 +49,21 @@ namespace Lab2
             visible();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            unvisible();
-            groupBox1.Text = "Добавление";
+            //удаление
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            unvisible();// привязка данных к полям
+            unvisible();
             groupBox1.Text = "Редактирование";
         }
 
-        private void Clients_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            visible();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //удаление
+            unvisible();
+            groupBox1.Text = "Добавление";
         }
     }
 }

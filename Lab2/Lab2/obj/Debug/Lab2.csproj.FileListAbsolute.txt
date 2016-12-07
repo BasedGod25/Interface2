@@ -10,3 +10,8 @@ C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\
 C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.csproj.GenerateResource.Cache
 C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.exe
 C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.Age.resources
+C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.Clients.resources
+C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.Damage.resources
+C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.Size.resources
+C:\Users\Алёна\OneDrive\доки\интерфейсы\Interface2\Lab2\Lab2\obj\Debug\Lab2.TypeСostume.resources

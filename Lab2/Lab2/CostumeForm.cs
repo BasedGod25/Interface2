@@ -21,6 +21,22 @@ namespace Lab2
         {
 
         }
+        public void visible()
+        {
+            dataGridView1.Visible = true;
+            groupBox1.Visible = false;
+            button1.Enabled = true;
+            button2.Enabled = true;
+            textBox1.Enabled = true;
+        }
+        public void unvisible()
+        {
+            dataGridView1.Visible = false;
+            groupBox1.Visible = true;
+            button1.Enabled = false;
+            button2.Enabled = false;
+            textBox1.Enabled = false;
+        }
         public void small()
         {
             dataGridView1.Location = new Point(12, 88);
@@ -51,10 +67,48 @@ namespace Lab2
                 open = true;
             }
         }
-
+        public bool open_forms(string name)
+        {
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == name)
+                {
+                    f.Activate();
+                    return false;
+                }
+            }
+            return true;
+        }
         private void CostumeForm_Load(object sender, EventArgs e)
         {
-            small();
+            small(); visible();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            unvisible();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            visible();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            visible();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TypeСostume type = new TypeСostume();
+            if (open_forms("TypeСostume")) type.Show(); 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Size size = new Size();
+            if (open_forms("Size")) size.Show(); 
         }
     }
 }

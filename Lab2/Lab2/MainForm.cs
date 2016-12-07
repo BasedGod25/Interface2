@@ -30,6 +30,7 @@ namespace Lab2
             button2.Enabled = true;
             button3.Enabled = true;
             button6.Enabled = true;
+            textBox1.Enabled = true;
         }
         public void unvisible()
         { 
@@ -39,6 +40,7 @@ namespace Lab2
             button2.Enabled = false;
             button3.Enabled = false;
             button6.Enabled = false;
+            textBox1.Enabled = false;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -76,6 +78,7 @@ namespace Lab2
             label3.Text = "Дата заказа";
             label11.Visible = true;
             dateTimePicker1.Visible = true;
+            button10.Enabled = true;
         }
 
         private void клиентыToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +104,7 @@ namespace Lab2
             label3.Text = "Дата по плану";
             label11.Visible = false;
             dateTimePicker1.Visible = false;
+            button10.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -110,6 +114,7 @@ namespace Lab2
             label3.Text = "Дата заказа";
             label11.Visible = true;
             dateTimePicker1.Visible = true;
+            button10.Enabled = false;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -150,17 +155,20 @@ namespace Lab2
 
         private void счетаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Bill bill = new Bill();
+            if (open_forms("Bill")) bill.Show();
         }
 
         private void заказыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Order order = new Order();
+            if (open_forms("Order")) order.Show(); 
         }
 
         private void броньToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Reservations reserv = new Reservations();
+            if (open_forms("Reservations")) reserv.Show(); 
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
@@ -168,7 +176,10 @@ namespace Lab2
             Application.Exit();
         }
 
-
-        
+        private void сотрудникиToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Employees employee = new Employees();
+            if (open_forms("Employees")) employee.Show(); 
+        }
     }
 }
