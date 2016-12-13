@@ -60,6 +60,10 @@ namespace Lab2
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Order". При необходимости она может быть перемещена или удалена.
+            this.orderTableAdapter.Fill(this.costume_shopDataSet.Order);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Costume". При необходимости она может быть перемещена или удалена.
+            this.costumeTableAdapter.Fill(this.costume_shopDataSet.Costume);
             Auth a = new Auth();
             a.ShowDialog();
             visible();

@@ -81,6 +81,8 @@ namespace Lab2
         }
         private void CostumeForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Costume". При необходимости она может быть перемещена или удалена.
+            this.costumeTableAdapter.Fill(this.costume_shopDataSet.Costume);
             small(); visible();
         }
 

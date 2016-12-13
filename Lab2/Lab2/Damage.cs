@@ -35,6 +35,8 @@ namespace Lab2
 
         private void Damage_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Damage_state". При необходимости она может быть перемещена или удалена.
+            this.damage_stateTableAdapter.Fill(this.costume_shopDataSet.Damage_state);
             visible();
         }
 

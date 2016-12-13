@@ -34,6 +34,10 @@ namespace Lab2
         }
         private void TypeСostume_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Costume_type". При необходимости она может быть перемещена или удалена.
+            this.costume_typeTableAdapter.Fill(this.costume_shopDataSet.Costume_type);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Costume_size". При необходимости она может быть перемещена или удалена.
+            this.costume_sizeTableAdapter.Fill(this.costume_shopDataSet.Costume_size);
             visible();
         }
 

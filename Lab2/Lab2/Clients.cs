@@ -59,6 +59,8 @@ namespace Lab2
 
         private void Clients_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Client". При необходимости она может быть перемещена или удалена.
+            this.clientTableAdapter.Fill(this.costume_shopDataSet.Client);
             visible();
         }
 
