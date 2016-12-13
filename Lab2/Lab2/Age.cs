@@ -57,6 +57,8 @@ namespace Lab2
 
         private void Age_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "costume_shopDataSet.Age_category". При необходимости она может быть перемещена или удалена.
+            this.age_categoryTableAdapter.Fill(this.costume_shopDataSet.Age_category);
             visible();
         }
 
